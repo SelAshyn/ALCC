@@ -1,0 +1,172 @@
+/* Activity Card Container */
+.activity-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 16px;
+  color: #000000;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hover Animation */
+.activity-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Activity Image */
+.activity-image {
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+/* If image tag was nested (not necessary here, remove if unused) */
+.activity-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content Section */
+.activity-details {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Date */
+.activity-date {
+  font-size: 0.85rem;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+/* Title */
+.activity-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Description */
+.activity-description {
+  font-size: 0.95rem;
+  color: #000000;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+/* Read more link */
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #60a5fa;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.read-more-btn:hover {
+  color: #3b82f6;
+}
+
+/* Participants */
+.activity-participants {
+  font-size: 0.85rem;
+  color: #0077ff;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* Grid layout */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 32px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+/* See More Button */
+.see-more-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #000000;
+  color: white;
+}
+/* Tablets and below */
+@media (max-width: 1024px) {
+  .activity-details {
+    padding: 20px;
+  }
+}
+
+/* Mobile and small tablets */
+@media (max-width: 768px) {
+  .activities-grid {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .activity-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .activity-image {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 10px;
+    margin: 24px auto 16px auto;
+  }
+
+  .activity-details {
+    padding: 20px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .activity-title {
+    font-size: 1.1rem;
+  }
+
+  .activity-description {
+    font-size: 0.9rem;
+  }
+
+  .see-more-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+
+
+/* Increase padding-top on small screens */
+@media (max-width: 480px) {
+  .recent-activities-section {
+    margin-top: 30%; /* increase top margin */
+  }
+}

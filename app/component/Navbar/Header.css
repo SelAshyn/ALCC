@@ -1,0 +1,217 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
+
+/* Navbar container */
+.navbar {
+  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,1));
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  font-family: 'Libre Caslon Text', serif;
+  position: sticky;
+  top: 1%;
+  z-index: 1000;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+/* Left section (logo + club name) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-small,
+.logo-large {
+  height: 60px;
+}
+
+.divider {
+  height: 40px;
+  width: 1px;
+  background-color: black;
+  margin: 0 10px;
+}
+
+.club-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-left: 10px;
+  line-height: 1.2;
+}
+
+/* Nav links */
+.navbar-links {
+  display: flex;
+  gap: 30px;
+  transition: max-height 0.3s ease;
+}
+
+.nav-item,
+.nav-item_h {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-item_h {
+  color: #0667a4;
+  text-shadow: #00fff2 0px 0px 50px;
+}
+
+.nav-item:hover {
+  color: #0667a4;
+  text-shadow: #0667a4 0px 0px 25px;
+}
+
+/* Login button */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  padding: 10px 40px;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+  background: #e4ba57;
+  color: white;
+}
+
+/* Hamburger button (hidden by default) */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ------------------ RESPONSIVE DESIGN ------------------ */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .navbar-left {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .club-name {
+    font-size: 16px;
+  }
+
+  .navbar-right {
+    display: none; /* Hide login button on mobile */
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 35px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a {
+    font-size: 18px;
+    padding: 6px 0;
+  }
+}
+
+
+
+/* ----------- MAX WIDTH: 480px ----------- */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .navbar-left {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .club-name {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .logo-small,
+  .logo-large {
+    height: 40px;
+  }
+
+  .divider {
+    height: 30px;
+    margin: 0 2px;
+  }
+
+  .navbar-right {
+    display: none; /* Hide login button on very small screens */
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+}
