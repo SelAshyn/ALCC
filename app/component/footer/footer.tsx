@@ -17,7 +17,7 @@ const Footer = () => {
     <footer className="footer" data-aos="fade-up">
       <div className="footer-main">
         <div className="footer-left">
-          <h2>St Xavier's A Level's Computer Club</h2>
+          <h2>St Xavier&apos;s A Level&apos;s Computer Club</h2>
           <p>📍 St. Xavier's College Loyola Campus, Thapathali, Kathmandu - 11, Nepal</p>
           <p>📞 +977 9864334657, +977 XXXXXXXXXX</p>
           <p>✉️ alcc@sxc.edu.np</p>
@@ -42,7 +42,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 <strong>St Xavier's A Level's Computer Club</strong> | All Rights Reserved</p>
+        <p>© 2025 <strong>St Xavier&apos;s A Level&apos;s Computer Club</strong> | All Rights Reserved</p>
         <p>Designed & Developed by <strong>Code_Guide</strong></p>
       </div>
     </footer>

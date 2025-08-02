@@ -20,7 +20,7 @@ export default function Home() {
         <div className="divider" />
         <img src="https://raw.githubusercontent.com/SelAshyn/ALCC/refs/heads/main/LogoWithoutBG.png" alt="Right Logo" className="logo-large" />
         <div className="club-name">
-          SXC A Level’s<br />
+          SXC A Level&apos;s<br />
           Computer Club
         </div>
       </div>
