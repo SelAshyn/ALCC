@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="footer-main">
         <div className="footer-left">
           <h2>St Xavier&apos;s A Level&apos;s Computer Club</h2>
-          <p>📍 St. Xavier's College Loyola Campus, Thapathali, Kathmandu - 11, Nepal</p>
+          <p>📍 St. Xavier&apos;s College Loyola Campus, Thapathali, Kathmandu - 11, Nepal</p>
           <p>📞 +977 9864334657, +977 XXXXXXXXXX</p>
           <p>✉️ alcc@sxc.edu.np</p>
           <div className="footer-icons">
