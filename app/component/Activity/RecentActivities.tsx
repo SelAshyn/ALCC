@@ -11,17 +11,17 @@ const activities = [
 
   {
     date: 'Tue, July 23, 2024',
-    title: 'Bhoos Office Visit',
+    title: 'SandBox | SXC',
     description: 'KEC Computer Club visited Bhoos Games, Nepal’s top game development company. We explored their organizational structure and workflows.',
     participants: '10 Participants',
-    imageUrl: 'https://computerclubkec.github.io/assets/images/events/bhoos-office-visit-2024/thumbnail.png',
+    imageUrl: 'https://raw.githubusercontent.com/SelAshyn/ALCC/refs/heads/main/Copy%20of%20DSC_0341.jpg',
   },
   {
     date: 'Fri, July 12, 2024',
     title: 'Community Outreach: Practical Skills in Prompt Engineering',
     description: 'Get ready for an exciting 36-hour hackathon where participants will tackle real-world problems, innovate solutions, and collaborate with industry experts.',
     participants: '20 Active Participants',
-    imageUrl: 'https://computerclubkec.github.io/assets/images/events/practical-skills-in-prompt-engineering-2024/thumbnail.JPG',
+    imageUrl: 'https://github.com/SelAshyn/ALCC/blob/baa47b206e7b759a03bfc962a88da26d1c07cef4/IMG_0652.HEIC?raw=true',
   },
   {
     date: 'Sat, July 6, 2024',
