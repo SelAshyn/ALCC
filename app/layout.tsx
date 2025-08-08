@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="https://raw.githubusercontent.com/SelAshyn/ALCC/refs/heads/main/public/LogoWithoutBG.png" type="image/x-icon"/>
+        <link rel="shortcut icon" href="https://raw.githubusercontent.com/SelAshyn/ALCC/refs/heads/main/public/FINALLOGO.png" type="image/x-icon"    sizes="16x16"/>
         <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800&display=swap" rel="stylesheet"></link>
         <link href="https://api.fontshare.com/v2/css?f[]=supreme@500&display=swap" rel="stylesheet"></link>
         <link href="https://api.fontshare.com/v2/css?f[]=bespoke-sans@700&display=swap" rel="stylesheet"></link>

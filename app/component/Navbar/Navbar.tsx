@@ -14,7 +14,7 @@ export default function Home() {
   }, []);
 
   return (
-    <header className="navbar" data-aos="fade-down" data-aos-once="true">
+    <header className="navbar" data-aos="fade-down-right" data-aos-once="true">
       <div className="navbar-left">
         <img src="https://wms.edigitalnepal.com/wms/files/ws-profile/1746599021908_0553cb68-a1c2-4cb6-847c-ae1c76fe3848.png" alt="Left Logo" className="logo-small" />
         <div className="divider" />
